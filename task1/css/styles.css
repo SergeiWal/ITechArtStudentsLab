@@ -20,6 +20,11 @@
   src: url("/task1/fonts/OpenSans-Light.ttf");
 }
 
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("/task1/fonts/SourceSansPro-Regular.ttf");
+}
+
 h1,
 h2,
 h3,
@@ -83,9 +88,10 @@ body {
 .header_menu {
   display: flex;
   flex-wrap: wrap;
+  padding: 15px;
 }
 
-.header_menu > * {
+.header > * {
   margin: 52px 0;
 }
 
@@ -105,13 +111,55 @@ body {
   color: #dc5e81;
 }
 
+@media (max-width: 1200px) {
+  .menu_item {
+    font-size: 11pt;
+    padding: 20px 15px;
+  }
+
+  .header_menu {
+    margin-right: 10px;
+  }
+  .header > * {
+    margin: 32px auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu_item {
+    font-size: 11pt;
+    padding: 15px 10px;
+    border: none;
+  }
+  .header_logo {
+    font-size: 18pt;
+    padding: 15px 10px;
+  }
+
+  .header > * {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .menu_item {
+    font-size: 12pt;
+    padding: 10px 5px;
+    border: none;
+  }
+}
 /*-----------------BANNER--------------------*/
-.main_banner {
+.banner_content {
   display: flex;
-  height: auto;
+  height: 100%;
   border-top: 1px groove #f5ece5;
   border-bottom: 1px groove #f5ece5;
   padding: 12px 0;
+  z-index: -1;
 }
 
 .banner_item {
@@ -157,6 +205,37 @@ body {
   padding: 15px 20px 15px 15px;
 }
 
+/*.banner_buttons {
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  background: #e8d6c8;
+  z-index: 2;
+}
+
+.buttons_list {
+  display: flex;
+  padding: 0px 12px 12px 9px;
+  border-bottom: 1px groove #f5ece5;
+  border-right: 1px groove #f5ece5;
+  border-left: 1px groove #f5ece5;
+}
+
+.banner_btn {
+  color: #e8d6c8;
+  border-radius: 100%;
+  border: 1px groove #f5ece5;
+}
+
+.active_btn {
+  color: #da4271;
+  border-color: #da4271;
+}
+
+.banner_btn:not(:last-child) {
+  margin-right: 5px;
+}*/
+
 @media (max-width: 1600px) {
   .main_title {
     font-size: 18pt;
@@ -194,4 +273,146 @@ body {
     font-size: 11pt;
     padding: 5px 10px 5px 5px;
   }
+}
+
+/*----------------FIRST_ROW-----------------------------*/
+
+.firsr_row {
+  border-bottom: 1px groove #f5ece5;
+  padding-bottom: 64px;
+}
+
+.firsr_row > * {
+  margin-top: 60px;
+}
+
+.row_content {
+  display: flex;
+  justify-content: center;
+}
+
+.row_text {
+  font-family: "OpenSans-Light";
+  font-size: 24pt;
+  line-height: auto;
+  color: #de6988;
+}
+
+.row_title {
+  font-family: "OpenSans-ExtraBold";
+  color: #591d39;
+}
+
+.row_buttons {
+  display: flex;
+  align-items: center;
+}
+
+.row_button {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: #e8d6c8;
+  cursor: pointer;
+  border: 3px solid #cfb8a6;
+  border-radius: 50%;
+}
+
+.row_buttons > *:not(:last-child) {
+  margin-right: 10px;
+}
+
+.row_buttons > *:last-child {
+  margin-right: 30px;
+}
+
+#i1.button_image {
+  background: url("/task1/assets/row1/03.png") center center no-repeat;
+}
+#i2.button_image {
+  background: url("/task1/assets/row1/02.png") center center no-repeat;
+}
+#i3.button_image {
+  background: url("/task1/assets/row1/01.png") center center no-repeat;
+}
+
+@media (max-width: 1200px) {
+  ._container {
+    max-width: 700px;
+  }
+
+  .row_text {
+    font-size: 18pt;
+  }
+
+  .row_button {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/*------------ROW_2------------------------*/
+.second_row {
+  display: flex;
+  justify-content: center;
+}
+
+.form_content {
+  margin-top: 60px;
+}
+
+.card_content {
+  display: flex;
+  align-items: stretch;
+}
+
+._card_container {
+  width: 100%;
+  max-width: 872px;
+}
+
+.card_content {
+  display: flex;
+}
+
+.card_image img {
+}
+
+.card_main_content {
+  background: #591d39;
+  padding: 32px 30px 75px 30px;
+}
+
+.card_text_content {
+  font-family: "SourceSansPro-Regular";
+  font-size: 12pt;
+  color: #8f6f7e;
+}
+
+.card_main_title {
+  font-family: "OpenSans-ExtraBold";
+  font-size: 24pt;
+  color: #fff;
+}
+
+.card_title {
+  font-family: "OpenSans-Light";
+  font-size: 24pt;
+  color: #af365e;
+}
+
+.more_button {
+  display: inline-block;
+  font-family: "OpenSans-ExtraBold";
+  font-size: 14pt;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #743b56;
+  padding: 10px 10px;
+  margin-top: 27px;
+}
+
+.more_button img {
+  width: 12pt;
+  height: 12pt;
 }
