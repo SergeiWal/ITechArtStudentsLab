@@ -241,6 +241,34 @@ i {
   padding: 15px 20px 15px 15px;
 }
 
+.buttons_container {
+  display: flex;
+  justify-content: center;
+}
+.bunner_buttons {
+  background: url("/task1/assets/bacground.png");
+  margin: 0px auto;
+  border: 1px groove #f5ece5;
+  border-top: none;
+  z-index: 50;
+  margin-top: -1px;
+  padding: 2px 14px 9px 14px;
+}
+.bunner_button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #e8d6c8;
+  cursor: pointer;
+  border: 1px solid #cfb8a6;
+  border-radius: 50%;
+}
+
+.bunner_button.active {
+  background: #da4271;
+  border-color: #da4271;
+}
+
 @media (max-width: 1200px) {
   .main_title {
     font-size: 20px;
@@ -267,6 +295,14 @@ i {
 
   .second_title {
     padding: 5px 10px 5px 5px;
+  }
+
+  .bunner_buttons {
+    padding: 1px 7px 3px 7px;
+  }
+  .bunner_button {
+    width: 5px;
+    height: 5px;
   }
 }
 
@@ -399,6 +435,23 @@ i {
 }
 
 ._card_container {
+  margin-top: -44px;
+}
+
+.card_button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  background: #da4271;
+  z-index: 1000;
+}
+
+.card_button i {
+  color: #fff;
 }
 
 .card_content {
@@ -515,6 +568,7 @@ button.form_submit {
   border: 1px solid #d66767;
   padding: 14px 18px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -525,6 +579,14 @@ button.form_submit {
   }
   .card_main_content {
     padding: 22px 20px 0px 20px;
+  }
+
+  .card_button {
+    width: 32px;
+    height: 32px;
+  }
+  ._card_container {
+    margin-top: -32px;
   }
 
   .card_text_content p {
@@ -730,6 +792,9 @@ button.form_submit {
   .lorem_disc {
     margin-left: 0px;
   }
+  .row_button.date_button {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -778,6 +843,13 @@ button.form_submit {
   font-weight: 800;
   font-family: "OpenSans-ExtraBold";
 }
+.footer_card_main {
+  padding: 0px 20px 0px 20px;
+}
+
+.footer_text p {
+  margin-top: 0px;
+}
 
 .footer_title {
   border-bottom: 1px groove #391123;
@@ -785,6 +857,8 @@ button.form_submit {
 }
 
 .footer_card {
+  display: flex;
+  flex-direction: column;
   margin-right: 30px;
 }
 
