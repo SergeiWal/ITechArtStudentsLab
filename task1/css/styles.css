@@ -515,10 +515,29 @@ i {
 }
 
 /*----FORM-----*/
+.form_fields {
+  display: flex;
+}
+
+.form_container {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: -40px;
+}
+
 .form {
   align-self: center;
   background: #da4271;
   padding: 40px 30px;
+}
+
+.pre_form {
+  width: 40px;
+  background: #cf3263;
+  transform: skewY(20deg);
+  margin-bottom: 9px;
+  margin-top: -8px;
 }
 
 .form_title {
