@@ -5,61 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="strict-origin" />
-    <title>Task_1</title>
-    <link href="/css/styles.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/596c3faf39.js"
-      crossorigin="anonymous"
-    ></script>
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/media.css" rel="stylesheet" />
+    <title>psd10_website</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="header _container">
         <div class="header_logo">SITENAME</div>
         <nav class="header_menu menu">
-          <div class="menu_item active"><a href="">HOME</a></div>
-          <div class="menu_item"><a href="">ABOUT</a></div>
-          <div class="menu_item"><a href="">SERVICES</a></div>
-          <div class="menu_item"><a href="">PORTFOLIO</a></div>
-          <div class="menu_item"><a href="">CONTACT</a></div>
+          <button class="menu_item active">HOME</button>
+          <button class="menu_item">ABOUT</button>
+          <button class="menu_item">SERVICES</button>
+          <button class="menu_item">PORTFOLIO</button>
+          <button class="menu_item">CONTACT</button>
         </nav>
       </header>
       <div class="main">
         <div class="main_banner banner">
           <div class="banner_content">
             <div class="banner_item banner_sides">
-              <img src="/assets/banner/01.png" alt="RightBanner" />
+              <img src="./assets/banner/b01.webp" alt="RightBanner" />
             </div>
             <div class="banner_item banner_current _container">
-              <img src="/assets/banner/02.png" alt="CurrentBanner" />
+              <img  class="main_img slider_animation active_img" src="./assets/banner/b02.webp" alt="MainBanner" data-id="0">
+              <img  class="main_img slider_animation" src="./assets/banner/b02.webp" alt="MainBanner" data-id="1">
+              <img  class="main_img slider_animation" src="./assets/banner/b02.webp" alt="MainBanner" data-id="2">
+              <img  class="main_img slider_animation" src="./assets/banner/b02.webp" alt="MainBanner" data-id="3">
+              <img  class="main_img slider_animation" src="./assets/banner/b02.webp" alt="MainBanner" data-id="4">
               <div class="banner_title title">
                 <div class="main_title">VIVAMUS SITE</div>
                 <div class="second_title">NUNC DIGNISSIM RISUS IDI</div>
               </div>
             </div>
             <div class="banner_item banner_sides">
-              <img src="/assets/banner/03.png" alt="LeftBanner" />
+              <img src="./assets/banner/b03.webp" alt="LeftBanner" />
             </div>
           </div>
         </div>
         <div class="buttons_container">
           <div class="bunner_buttons">
-            <div class="bunner_button active"></div>
-            <div class="bunner_button"></div>
-            <div class="bunner_button"></div>
-            <div class="bunner_button"></div>
-            <div class="bunner_button"></div>
+            <button class="bunner_button active" data-id="0"></button>
+            <button class="bunner_button" data-id="1"></button>
+            <button class="bunner_button" data-id="2"></button>
+            <button class="bunner_button" data-id="3"></button>
+            <button class="bunner_button" data-id="4"></button>
           </div>
         </div>
         <div class="firsr_row">
           <div class="_container">
             <div class="row_content">
               <div class="row_buttons">
-                <div id="i1" class="row_button button_image"></div>
-                <div id="i2" class="row_button button_image"></div>
-                <div id="i3" class="row_button button_image"></div>
+                <button  class="row_button "><i class="fas fa-user"></i></button>
+                <button  class="row_button "><i class="fas fa-pen"></i></button>
+                <button  class="row_button "><i class="fas fa-map-marker-alt"></i></button>
               </div>
-              <div class="row_text">
+              <div class="row_text">    
                 <h2 class="row_title">
                   DONEC NEC JUSTO EGET FELIS FACILISIS FERMENTU
                 </h2>
@@ -74,14 +75,12 @@
             <div class="form_content">
               <div class="form_info cards">
                 <div class="first_card card">
-                  <a href="">
-                    <div class="card_button">
+                    <button class="card_button">
                       <i class="fas fa-search-plus"></i>
-                    </div>
-                  </a>
+                    </button>
                   <div class="card_content _card_container">
                     <div class="card_image">
-                      <img src="/assets/row2/01.png" alt="cardImg1" />
+                      <img src="./assets/row2/r2_01.webp" alt="cardImg1" />
                     </div>
                     <div class="card_main_content">
                       <div class="card_text_content">
@@ -91,7 +90,7 @@
                         <h4 class="card_title">
                           Liporttitor mauris sit amet orean dign
                         </h4>
-                        <p>
+                        <p title="Liporttitor mauris sit amet orean dign">
                           Sed egestas, ante et vulputate volutpat, eros pede
                           semper est, vitae luctus metus libero eu augue. Morb
                           purus libero, faucibus adipscing, commondo quis,
@@ -99,22 +98,20 @@
                           liporttitor alseuqm.
                         </p>
                       </div>
-                      <div class="more_button">
+                      <button class="more_button">
                         MORE
                         <i class="fas fa-plus-circle"></i>
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
                 <div class="second_card card">
-                  <a href="">
-                    <div class="card_button">
+                    <button class="card_button">
                       <i class="fas fa-search-plus"></i>
-                    </div>
-                  </a>
+                    </button>
                   <div class="card_content _card_container">
                     <div class="card_image">
-                      <img src="/assets/row2/02.png" alt="cardImg1" />
+                      <img src="./assets/row2/r2_02.webp" alt="cardImg1" />
                     </div>
                     <div class="card_main_content">
                       <div class="card_text_content">
@@ -124,7 +121,7 @@
                         <h4 class="card_title">
                           Fusce lobortis lorem at ipsum semper sagittis
                         </h4>
-                        <p>
+                        <p title="Fusce lobortis lorem at ipsum semper sagittis">
                           Sed egestas, ante et vulputate volutpat, eros pede
                           semper est, vitae luctus metus libero eu augue. Morb
                           purus libero, faucibus adipscing, commondo quis,
@@ -132,10 +129,10 @@
                           liporttitor alseuqm.
                         </p>
                       </div>
-                      <div class="more_button">
+                      <button class="more_button">
                         MORE
                         <i class="fas fa-plus-circle"></i>
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -152,7 +149,7 @@
                         name="name"
                         placeholder=" Enter your name..."
                       />
-                      <a href="">
+                      <a >
                         <div class="form_input_button">
                           <i class="fas fa-user"></i>
                         </div>
@@ -165,7 +162,7 @@
                         name="email"
                         placeholder=" Enter email id..."
                       />
-                      <a href="">
+                      <a >
                         <div class="form_input_button">
                           <i class="fas fa-envelope"></i>
                         </div>
@@ -178,7 +175,7 @@
                         placeholder=" Message..."
                       ></textarea>
                       <div class="textarea_button">
-                        <a href="">
+                        <a >
                         <div class="form_input_button">
                           <i class="fas fa-pen"></i>
                         </div>
@@ -351,21 +348,21 @@
                 <h3 class="card_title footer_title">Interidum mollis sellus</h3>
                 <div class=" _footer_card_content">
                   <div class="_footer_card_image">
-                    <img src="/assets/footer/01.png" alt="cardImg1" />
+                    <img src="./assets/footer/f01.webp" alt="cardImg1" />
                   </div>
                   <div class="footer_card_main_content">
                     <div class="footer_text_content footer_text">
-                      <p>
+                      <p title="Interidum mollis sellus">
                         Sed egestas, ante et vulputate volutpat, eros pede
                         semper est, vitae luctus metus libero eu augue. Morb
                         purus libero, faucibus adipscing, commondo quis, gravida
                         id, est. Sed lectus dignisiim equie liporttitor alseuqm.
                       </p>
                     </div>
-                    <div class="footer_button">
+                    <button class="footer_button">
                       MORE
                       <i class="fas fa-plus-circle"></i>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -373,20 +370,20 @@
                 <h3 class="card_title footer_title">Vivamus vestibulum nulla</h3>
                 <div class=" _footer_card_content">
                   <div class="_footer_card_image">
-                    <img src="/assets/footer/02.png" alt="cardImg1" />
+                    <img src="./assets/footer/f02.webp" alt="cardImg1" />
                   </div>
                   <div class="footer_card_main_content">
                     <div class="footer_text_content footer_text">
-                      <p>
+                      <p title="Vivamus vestibulum nulla">
                         jIrem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
                         In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
                       </p>
                     </div>
-                    <div class="footer_button">
+                    <button class="footer_button">
                       MORE
                       <i class="fas fa-plus-circle"></i>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -406,5 +403,9 @@
         </div>
       </footer>
     </div>
+    <script
+      src="https://kit.fontawesome.com/596c3faf39.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
