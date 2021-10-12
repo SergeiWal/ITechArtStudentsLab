@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "./variables.css";
 
 @font-face {
   font-family: "OpenSans-ExtraBold";
@@ -51,7 +52,7 @@ button {
 }
 
 button:focus {
-  border: 1px solid #cfb8a6;
+  border: var(--elemBorderLine) var(--buttonBorderColor);
 }
 
 a:focus {
@@ -83,15 +84,15 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: var(--headerPadding);
 }
 
 .header_logo {
-  background: #da4271;
+  background: var(--mainColor);
   font-family: "OpenSans-ExtraBold";
-  font-size: 26px;
+  font-size: var(--headFontSize);
   line-height: auto;
-  color: #fff;
+  color: var(--white);
   box-shadow: 10px 10px #cbbbae;
   padding: 20px 14px;
 }
@@ -99,7 +100,7 @@ i {
 .header_menu {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px;
+  padding: var(--headerPadding);
 }
 
 .header > * {
@@ -109,27 +110,27 @@ i {
 .menu_item {
   background: transparent;
   font-family: "OpenSans-Light";
-  font-size: 14px;
+  font-size: var(--standartFont);
   line-height: auto;
   padding: 25px 15px;
-  border: 1px groove #f5ece5;
+  border: var(--baseBorderLine) var(--mainBorderColor);
   color: #6c354c;
 }
 
 .menu_item:hover {
-  color: #dc5e81;
+  color: var(--activeColor);
   cursor: pointer;
 }
 
 .active {
-  color: #dc5e81;
+  color: var(--activeColor);
 }
 
 /*-----------------BANNER--------------------*/
 
 .banner {
-  border-top: 1px groove #f5ece5;
-  border-bottom: 1px groove #f5ece5;
+  border-top: var(--baseBorderLine) var(--mainBorderColor);
+  border-bottom: var(--baseBorderLine) var(--mainBorderColor);
   padding: 12px 0;
 }
 
@@ -180,19 +181,19 @@ i {
 }
 
 .main_title {
-  background: #da4271;
+  background: var(--mainColor);
   font-family: "OpenSans-ExtraBold";
-  font-size: 26px;
-  color: #fff;
-  padding: 15px 20px 15px 15px;
+  font-size: var(--headFontSize);
+  color: var(--white);
+  padding: var(--bannerPadding);
 }
 
 .second_title {
-  background: #591d39;
+  background: var(--titleBackgroundColor);
   font-family: "OpenSans-Light";
-  font-size: 18px;
+  font-size: var(--titleFontSize);
   color: #c0a3a0;
-  padding: 15px 20px 15px 15px;
+  padding: var(--bannerPadding);
 }
 
 .buttons_container {
@@ -202,7 +203,7 @@ i {
 .bunner_buttons {
   background: url("../assets/bacground/bgn.webp");
   margin: 0px auto;
-  border: 1px groove #f5ece5;
+  border: var(--baseBorderLine) var(--mainBorderColor);
   border-top: none;
   z-index: 50;
   margin-top: -1px;
@@ -210,21 +211,20 @@ i {
 }
 .bunner_button {
   display: inline-block;
-  width: 10px;
   height: 10px;
   background: #e8d6c8;
   cursor: pointer;
-  border: 1px solid #cfb8a6;
-  border-radius: 100%;
+  border: var(--elemBorderLine) var(--buttonBorderColor);
+  border-radius: 50%;
 }
 
 .bunner_button:focus {
-  background: #cfb8a6;
+  background: var(--buttonBorderColor);
 }
 
 .bunner_button.active {
-  background: #da4271;
-  border-color: #da4271;
+  background: var(--mainColor);
+  border-color: var(--mainColor);
 }
 
 .slider_animation {
@@ -244,7 +244,7 @@ i {
 /*----------------FIRST_ROW-----------------------------*/
 
 .firsr_row {
-  border-bottom: 1px groove #f5ece5;
+  border-bottom: var(--baseBorderLine) var(--mainBorderColor);
   padding-bottom: 64px;
 }
 
@@ -259,14 +259,14 @@ i {
 
 .row_text {
   font-family: "OpenSans-Light";
-  font-size: 26px;
+  font-size: var(--headFontSize);
   line-height: auto;
   color: #de6988;
 }
 
 .row_title {
   font-family: "OpenSans-ExtraBold";
-  color: #591d39;
+  color: var(--titleBackgroundColor);
 }
 
 .row_buttons {
@@ -278,14 +278,14 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: var(--rowButtonSize);
+  height: var(--rowButtonSize);
   background: transparent;
   cursor: pointer;
-  border: 3px solid #cfb8a6;
+  border: 3px solid var(--buttonBorderColor);
   border-radius: 50%;
   font-size: 20px;
-  color: #da4271;
+  color: var(--mainColor);
 }
 
 .row_button:hover {
@@ -331,20 +331,20 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: var(--cardButtonSize);
+  height: var(--cardButtonSize);
   text-align: center;
-  background: #da4271;
+  background: var(--mainColor);
   z-index: 1000;
   border: none;
 }
 
 .card_button:hover {
-  font-size: 18px;
+  font-size: var(--titleFontSize);
 }
 
 .card_button i {
-  color: #fff;
+  color: var(--white);
 }
 
 .card_content {
@@ -360,15 +360,15 @@ i {
 .card_main_content {
   width: 100%;
   max-width: 600px;
-  background: #591d39;
+  background: var(--titleBackgroundColor);
   padding: 32px 30px 0px 30px;
 }
 
 .card_text_content {
   font-family: "SourceSansPro-Regular";
-  font-size: 15px;
+  font-size: var(--cardFont);
   line-height: 20px;
-  color: #8f6f7e;
+  color: var(--cardContentColor);
   font-weight: 400;
 }
 
@@ -378,14 +378,14 @@ i {
 
 .card_main_title {
   font-family: "OpenSans-ExtraBold";
-  font-size: 22px;
+  font-size: var(--headFontSizeL2);
   font-weight: 800;
-  color: #fff;
+  color: var(--white);
 }
 
 .card_title {
   font-family: "OpenSans-Light";
-  font-size: 22px;
+  font-size: var(--headFontSizeL2);
   font-weight: 800;
   color: #af365e;
 }
@@ -393,22 +393,22 @@ i {
 .more_button {
   background: transparent;
   font-family: "OpenSans-ExtraBold";
-  font-size: 14px;
-  color: #fff;
+  font-size: var(--standartFont);
+  color: var(--white);
   width: 78px;
   height: 32px;
   cursor: pointer;
-  border: 1px solid #743b56;
+  border: var(--elemBorderLine) #743b56;
   padding: 0px 5px 0px 10px;
   margin: 28px 0;
 }
 
 .more_button i {
-  color: #da4271;
+  color: var(--mainColor);
 }
 
 .more_button:hover {
-  background: #4f1932;
+  background: var(--buttonHoverColor);
 }
 
 /*----FORM-----*/
@@ -425,7 +425,7 @@ i {
 
 .form {
   align-self: center;
-  background: #da4271;
+  background: var(--mainColor);
   padding: 40px 30px;
 }
 
@@ -441,9 +441,9 @@ i {
 
 .form_title {
   font-family: "OpenSans-ExtraBold";
-  font-size: 22px;
+  font-size: var(--headFontSizeL2);
   letter-spacing: 1px;
-  color: #ffffff;
+  color: var(--white);
   font-weight: 800;
 }
 
@@ -456,22 +456,22 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 38px;
-  width: 38px;
+  height: var(--inputButtonSize);
+  width: var(--inputButtonSize);
   color: rgba(255, 255, 255, 0.34);
-  border: 1px solid rgba(255, 255, 255, 0.34);
+  border: var(--elemBorderLine) rgba(255, 255, 255, 0.34);
   margin-top: 20px;
 }
 
 .form_name input,
 .form_email input {
   font-family: "SourceSansPro-Regular";
-  background: #da4271;
-  color: #fff;
+  background: var(--mainColor);
+  color: var(--white);
   width: 205px;
   height: 36px;
-  font-size: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.34);
+  font-size: var(--cardFont);
+  border: var(--elemBorderLine) rgba(255, 255, 255, 0.34);
   margin-top: 20px;
   padding-left: 10px;
   outline: none;
@@ -481,7 +481,7 @@ i {
 .form_email input::placeholder,
 .form_text textarea::placeholder {
   color: #e782a1;
-  font-size: 15px;
+  font-size: var(--cardFont);
 }
 
 .textarea_button {
@@ -491,12 +491,12 @@ i {
 
 .form_text textarea {
   font-family: "SourceSansPro-Regular";
-  background: #da4271;
-  color: #fff;
+  background: var(--mainColor);
+  color: var(--white);
   width: 202px;
   height: 75px;
-  font-size: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.34);
+  font-size: var(--cardFont);
+  border: var(--elemBorderLine) rgba(255, 255, 255, 0.34);
   margin-top: 20px;
   padding-left: 10px;
   padding-right: 45px;
@@ -507,32 +507,32 @@ i {
 .form_name input:focus,
 .form_email input:focus,
 .form_text textarea:focus {
-  border: 1px solid #d66767;
+  border: var(--elemBorderLine) var(--formColor);
 }
 
 button.form_submit {
-  background: #da4271;
+  background: var(--mainColor);
   font-family: "OpenSans-ExtraBold";
-  font-size: 14px;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.34);
+  font-size: var(--standartFont);
+  color: var(--white);
+  border: var(--elemBorderLine) rgba(255, 255, 255, 0.34);
   padding: 14px 18px;
   margin-top: 20px;
   cursor: pointer;
 }
 
 button.form_submit:hover {
-  border-color: #d66767;
+  border-color: var(--formColor);
 }
 
 button.form_submit:focus {
-  border-color: #d66767;
+  border-color: var(--formColor);
 }
 /*-------ROW_3------------*/
 /*COL_1*/
 .third_row {
   margin-top: 60px;
-  border-top: 1px groove #f5ece5;
+  border-top: var(--baseBorderLine) var(--mainBorderColor);
   padding-top: 60px;
 }
 
@@ -543,8 +543,8 @@ button.form_submit:focus {
 
 .col_header {
   font-family: "OpenSans-ExtraBold";
-  font-size: 22px;
-  color: #591d39;
+  font-size: var(--headFontSizeL2);
+  color: var(--titleBackgroundColor);
 }
 
 .content_cards {
@@ -554,8 +554,8 @@ button.form_submit:focus {
 
 .col_text_context {
   font-family: "SourceSansPro-Regular";
-  font-size: 15px;
-  color: #8f6f7e;
+  font-size: var(--cardFont);
+  color: var(--cardContentColor);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -570,7 +570,7 @@ button.form_submit:focus {
 }
 
 .more_info a:hover {
-  color: #da4271;
+  color: var(--mainColor);
 }
 
 .row_button.date_button {
@@ -578,10 +578,10 @@ button.form_submit:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #da4271;
+  background: var(--mainColor);
   font-family: "OpenSans-ExtraBold";
-  font-size: 14px;
-  color: #fff;
+  font-size: var(--standartFont);
+  color: var(--white);
   text-align: center;
   border: none;
   cursor: default;
@@ -602,7 +602,7 @@ button.form_submit:focus {
 }
 
 .blog > *:not(:last-child) {
-  border-bottom: 1px groove #f5ece5;
+  border-bottom: var(--baseBorderLine) var(--mainBorderColor);
 }
 
 .col_text_context.blog_text {
@@ -622,13 +622,13 @@ button.form_submit:focus {
 .info_text {
   font-family: "SourceSansPro-Regular";
   font-size: 12px;
-  color: #da4271;
+  color: var(--mainColor);
   font-weight: 300;
 }
 
 .info_icon {
   font-size: 12px;
-  color: #591d39;
+  color: var(--titleBackgroundColor);
 }
 /*-----COL_3---*/
 .col_third {
@@ -640,11 +640,11 @@ button.form_submit:focus {
 }
 
 .lorem_list > *:not(:last-child) {
-  border-bottom: 1px groove #f5ece5;
+  border-bottom: var(--baseBorderLine) var(--mainBorderColor);
 }
 
 .lorem_item {
-  margin-top: 15px;
+  margin-top: var(--cardFont);
   padding-bottom: 15px;
 }
 
@@ -656,24 +656,24 @@ button.form_submit:focus {
   margin-left: 0px;
   max-width: 370px;
   font-family: "SourceSansPro-Regular";
-  font-size: 15px;
+  font-size: var(--cardFont);
   line-height: 20px;
-  color: #8f6f7e;
+  color: var(--cardContentColor);
 }
 
 .lorem_text:hover a {
-  color: #da4271;
+  color: var(--mainColor);
 }
 
 .lorem_icon {
-  font-size: 14px;
-  color: #da4271;
+  font-size: var(--standartFont);
+  color: var(--mainColor);
 }
 
 /*-------------------------FOOTER-------------------------------*/
 /*-----lower_footer---------*/
 .lower_footer {
-  background: #591d39;
+  background: var(--titleBackgroundColor);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -700,46 +700,47 @@ button.form_submit:focus {
 }
 
 .card_title.footer_title {
-  font-size: 22px;
+  font-size: var(--headFontSizeL2);
   letter-spacing: 1px;
-  color: #ffffff;
+  color: var(--white);
   font-weight: 800;
   font-family: "OpenSans-ExtraBold";
 }
 .footer_card_main_content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   max-width: 600px;
-  background: #591d39;
+
+  background: var(--titleBackgroundColor);
   padding: 0px 20px 0px 20px;
 }
 
 .footer_text {
   justify-self: flex-start;
   font-family: "SourceSansPro-Regular";
-  font-size: 15px;
+  font-size: var(--cardFont);
   line-height: 20px;
-  color: #8f6f7e;
+  color: var(--cardContentColor);
   font-weight: 400;
 }
 
 .footer_button {
+  display: block;
   background: transparent;
   font-family: "OpenSans-ExtraBold";
-  font-size: 14px;
-  color: #fff;
+  font-size: var(--standartFont);
+  color: var(--white);
   width: 78px;
   height: 32px;
   cursor: pointer;
-  border: 1px solid #743b56;
+  border: var(--elemBorderLine) #743b56;
   padding: 5px 5px 5px 10px;
-  margin-top: 28px;
-  justify-self: flex-end;
 }
 
 .footer_button:hover {
-  background: #4f1932;
+  background: var(--buttonHoverColor);
 }
 
 .footer_button i {
@@ -751,7 +752,7 @@ button.form_submit:focus {
 }
 
 .footer_title {
-  border-bottom: 1px groove #391123;
+  border-bottom: var(--baseBorderLine) #391123;
   padding-bottom: 30px;
 }
 
@@ -762,13 +763,13 @@ button.form_submit:focus {
 }
 
 .under_footer {
-  background: #4f1932;
+  background: var(--buttonHoverColor);
 }
 
 .under_footer_content {
-  font-size: 15px;
-  line-height: 26px;
-  color: #ffffff;
+  font-size: var(--cardFont);
+  line-height: var(--headFontSize);
+  color: var(--white);
   font-weight: 400;
   font-family: "OpenSans-Regilar";
   text-align: center;

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+:root {
+  --buttonBorderColor: #cfb8a6;
+  --headFontSize: 26px;
+  --headFontSizeL2: 22px;
+  --smallFont: 11px;
+  --white: #fff;
+  --standartFont: 14px;
+  --headerPadding: 15px;
+  --mainColor: #da4271;
+  --mainBorderColor: #f5ece5;
+  --activeColor: #dc5e81;
+  --baseBorderLine: 1px groove;
+  --titleBackgroundColor: #591d39;
+  --titleFontSize: 18px;
+  --bannerPadding: 15px 20px 15px 15px;
+  --bannerMediumPadding: 10px 15px 10px 10px;
+  --bunnerButtonsPadding: 0px 10px 5px 10px;
+  --smallTitlePadding: 5px 10px 5px 5px;
+  --elemBorderLine: 1px solid;
+  --rowButtonSize: 80px;
+  --smallRowButtonSize: 60px;
+  --cardButtonSize: 44px;
+  --cardContentColor: #8f6f7e;
+  --inputButtonSize: 38px;
+  --cardFont: 15px;
+  --formColor: #d66767;
+  --buttonHoverColor: #4f1932;
+}
