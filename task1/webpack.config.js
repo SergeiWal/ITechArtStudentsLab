@@ -7,11 +7,7 @@ module.exports = function (env, argv) {
   const srcPath = path.resolve(__dirname, "./src/");
   const mode = argv.mode === "production" ? "production" : "development";
 
-  if (mode === "production") {
-    distPath = path.resolve(__dirname, "./dist/prod/");
-  } else {
-    distPath = path.resolve(__dirname, "./dist/dev/");
-  }
+  distPath = path.resolve(__dirname, "./dist/");
 
   return {
     mode: mode,
@@ -19,6 +15,12 @@ module.exports = function (env, argv) {
     output: {
       path: distPath,
       filename: "[name].[contenthash].bundle.js",
+    },
+    devServer: {
+      static: {
+        directory: distPath,
+      },
+      port: 3030,
     },
     module: {
       rules: [
